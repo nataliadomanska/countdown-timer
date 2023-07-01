@@ -38,10 +38,10 @@ const countDownTimer = setInterval(
     );
 
     // Display the results
-    days.innerHTML = `<p class="input">${day}D</p>`;
-    hours.innerHTML = `<p class="input">${hour}H</p>`;
-    minutes.innerHTML = `<p class="input">${minute}M</p>`;
-    seconds.innerHTML = `<p class="input number">${second}S</p>`;
+    days.innerHTML = `<p class="input">${day}d</p>`;
+    hours.innerHTML = `<p class="input">${hour}h</p>`;
+    minutes.innerHTML = `<p class="input">${minute}m</p>`;
+    seconds.innerHTML = `<p class="input number">${second}s</p>`;
   },
   // Update the countdown every 1 second
   1000
