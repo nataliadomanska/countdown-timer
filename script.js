@@ -26,11 +26,16 @@ const countDownTimer = setInterval(
     const distance = countDownDate.getTime() - now;
     // Time calculations for days, hours, minutes and seconds
     const day = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hour = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    const hour = String(
+      Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    ).padStart(2, 0);
+    const minute = String(
+      Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    ).padStart(2, 0);
+    const second = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(
+      2,
+      0
     );
-    const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const second = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the results
     days.innerHTML = `<p class="input">${day}D</p>`;
