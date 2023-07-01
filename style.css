@@ -8,6 +8,10 @@ html {
   margin: 0;
 }
 
+:root {
+  color-scheme: light only;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -17,7 +21,7 @@ body {
 
 .content {
   width: 80%;
-  background-color: purple;
+  background-color: rgb(94, 1, 94);
   box-shadow: 0px 0px 10px 0px;
   margin: 0 auto;
   margin-top: 5vw;
@@ -58,7 +62,7 @@ p {
   width: 10vw;
   height: 10vw;
   margin: 1rem;
-  background-color: magenta;
+  background-color: rgb(255, 148, 255);
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px;
   display: flex;
